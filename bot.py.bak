@@ -7,11 +7,10 @@ import json
 import structlog
 import asyncio
 import async_timeout
-# import aioredis
+import aioredis
 import re
 from dotenv import load_dotenv
 from PIL import Image
-from redis import asyncio as aioredis
 
 spirit_emoji_map = {
 'Behemoth': 'SpiritEmberEyedBehemoth',
