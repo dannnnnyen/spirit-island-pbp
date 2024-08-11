@@ -26,7 +26,6 @@ def get_ip(request):
 def ip_whitelist(request):
     if get_ip(request) == "127.0.0.1":
         return "127.0.0.1"
-    return get_ip(request)
 
 @api.get("/ip", auth=ip_whitelist)
 def ip(request):
