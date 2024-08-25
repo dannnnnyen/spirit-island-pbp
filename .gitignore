@@ -3,6 +3,6 @@ db.sqlite3
 .env
 out.jpg
 static/*
-*.bak
+*.bak*
 nohup.out
 screenshot/*
