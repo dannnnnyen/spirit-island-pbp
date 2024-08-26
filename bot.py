@@ -109,6 +109,8 @@ async def updatethings(after,topic):
         #r = requests.post(f'http://localhost:8000/api/game/{guid}/link/{after.id}')
         r = requests.post(f'http://34.31.6.112:8000/api/game/{guid}/link/{after.id}')
         LOG.msg(r)
+        r = requests.post(f'http://34.31.6.112:8080/api/game/{guid}/link/{after.id}')
+        LOG.msg(r)
 
 @client.event
 async def on_guild_channel_update(before, after):
